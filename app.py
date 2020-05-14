@@ -18,9 +18,9 @@ base_dir = os.path.abspath(os.path.dirname(__file__))
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + os.path.join(base_dir, 'data.db')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
-@app.before_first_request
-def create_tables():
-    db.create_all()
+# @app.before_first_request
+# def create_tables():
+#     db.create_all()
 # db = SQLAlchemy(app)
 # Migrate(app, db)
 
